@@ -1,8 +1,22 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Maven build output
+/target/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+/src/main/resources/application-local.properties
+/src/main/resources/application-local.yml
+/src/main/resources/application-local.yaml
+
+# Logs and JVM crash reports
+*.log
+logs/
+hs_err_pid*
+replay_pid*
+
+# Keep Maven Wrapper files versioned.
+!.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
 .apt_generated
