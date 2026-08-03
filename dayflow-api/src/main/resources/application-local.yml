@@ -1,0 +1,14 @@
+spring:
+  config:
+    import: optional:file:.env[.properties]
+  datasource:
+    url: ${DAYFLOW_DB_URL:${DB_URL:jdbc:oracle:thin:@//localhost:1522/FREEPDB1}}
+    username: ${DAYFLOW_DB_USERNAME:DAYFLOW}
+    password: ${DAYFLOW_DB_PASSWORD:${DB_PASSWORD}}
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    show-sql: false
+
+logging:
+  level:
+    cl.dayflow.api: DEBUG

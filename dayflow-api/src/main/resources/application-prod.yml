@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: ${DAYFLOW_DB_URL}
+    username: ${DAYFLOW_DB_USERNAME}
+    password: ${DAYFLOW_DB_PASSWORD}
+    driver-class-name: oracle.jdbc.OracleDriver
+
+logging:
+  level:
+    root: WARN
+    cl.dayflow.api: INFO
